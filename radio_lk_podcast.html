@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radio LK Podcast</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4ff;
+      color: #333;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 40px;
+    }
+
+    .logo img {
+      max-width: 200px;
+      height: auto;
+      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    }
+
+    h1 {
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .last-update {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+
+    .podcast-section {
+      margin-bottom: 50px;
+    }
+
+    .podcast-title {
+      font-size: 1.3rem;
+      color: #1e40af;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    /* Latest Podcast stays same */
+    
+    /* Previous Podcast special styling */
+    .previous-podcast {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border: 2px solid #2563eb;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
+    }
+
+    .previous-podcast .podcast-title {
+      color: #1e3a8a;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 8px;
+    }
+
+    iframe {
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.6);
+      max-width: 100%;
+      height: 340px;
+      border: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      body {
+        padding: 20px 10px;
+      }
+      iframe {
+        height: 200px;
+      }
+      .previous-podcast {
+        max-width: 100%;
+        padding: 15px;
+      }
+      .previous-podcast .podcast-title {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      iframe {
+        height: 160px;
+      }
+      .previous-podcast .podcast-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="radio-lk-podcast-logo.png" alt="Radio LK Podcast Logo" />
+  </div>
+
+  <h1>Radio LK Podcast</h1>
+  <div class="last-update">Last Update: 2025-06-07</div>
+
+  <!-- Latest Podcast -->
+  <section class="podcast-section">
+    <div class="podcast-title">Latest Podcast</div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6yKGMPMObVA" 
+      title="Radio LK Podcast - Latest" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Previous Podcast -->
+  <section class="previous-podcast podcast-section">
+    <div class="podcast-title">Previous Podcast</div>
+    <iframe src="https://www.youtube.com/embed/OldVideoIDHere" 
+      title="Radio LK Podcast - Previous" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </section>
+
+</body>
+</html>
